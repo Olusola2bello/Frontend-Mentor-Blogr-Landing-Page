@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/*styling the header*/
+header {
+    /* width: 100vw; */
+    background: linear-gradient(rgba(255, 143, 112, 1.0), rgba(255, 61, 84, 0.9)), url(/images/bg-pattern-intro-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding: 1.2rem;
+    height: 25rem;
+    border-radius: 0 0 0 150px;
+    margin-bottom: 4rem;
+}
+
+.hamburger {
+    margin-left: 12rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-items ul {
+    display: none;
+}
+
+.nav-items ul li {
+    list-style: none;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.login-signup {
+    display: none;
+    justify-content: space-between;
+}
+
+.login-signup button {
+    padding: 5px;
+    margin: 5px;
+}
+
+.nav-div {
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.nav-div h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-div h4 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 1rem;
+    word-spacing: 1.5px;
+    margin-bottom: 1.5em;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 7rem;
+}
+
+.start {
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    font-weight: 400;
+}
+
+/*styling Section class "Designed"*/
+.designed {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.designed h1 {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 1.1;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 1.2rem;
+}
+
+.dtext1 h2 {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 1.1;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 1.2rem;
+    /* font-size: 1rem; */
+}
+
+.dtext1 p {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 1.1;
+    font-weight: 300;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 1.7rem;
+}
+
+.dimage {
+    display: none;
+}
+
+/*styling Section class "State"*/
+
+.state {
+    /* border: 1px solid red; */
+    height: 25rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0 100px 0;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(rgba(44, 45, 63, 0.7), rgba(63, 65, 100, 0.9)), url(/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10;
+}
+
+.simage {
+    margin-top: -7rem;
+}
+
+.stext h1 {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1.1;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 0.2rem;
+}
+
+.stext p {
+    color: hsl(240, 2%, 79%);
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding: 1.7rem;
+}
+
+.free {
+
+    /* height: 25rem; */
+    padding: 1.6rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.ftext1 h1 {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 1.1;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 0.2rem;
+    /* font-size: 1rem; */
+}
+
+.ftext1 p {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 1.1;
+    font-weight: 300;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    padding: 1.8rem;
+}
+
+footer {
+    height: 800px;
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 150px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footertext {
+    margin-top: 20px;
+}
+
+.footertext h2 {
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+.footertext h3 {
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    color: hsl(240, 2%, 79%)
+}
+
+/* media queries responsiveness*/
+@media only screen and (min-width:760px) {
+
+    header {
+        height: 27rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav-items ul {
+        display: flex;
+        margin-top: 0.8rem;
+        margin-left: -25rem;
+    }
+
+    .nav-items ul li {
+        list-style: none;
+    }
+
+    .nav-items ul li a {
+        text-decoration: none;
+        padding: 5px;
+        color: white;
+    }
+
+    .login-signup {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .login-signup button {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .login-signup .login:hover {
+        cursor: pointer;
+    }
+
+    .login-signup .signup:hover {
+        cursor: pointer;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(355, 100%, 74%);
+        transition: 0.5s ease-in ease-in-out;
+    }
+
+    .start:hover {
+        cursor: pointer;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(355, 100%, 74%);
+    }
+
+    .learn-more:hover {
+        cursor: pointer;
+        color: hsl(355, 100%, 74%);
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .nav-div {
+        margin-top: 5rem;
+        padding: 1.3rem;
+        text-align: center;
+    }
+
+    .nav-div h1 {
+        color: hsl(0, 0%, 100%);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+    .nav-div h4 {
+        color: hsl(0, 0%, 100%);
+        font-weight: 300;
+        font-size: 1rem;
+        word-spacing: 1.5px;
+        margin-bottom: 1.5em;
+    }
+
+    .login {
+        background-color: transparent;
+    }
+
+    .signup {
+        background-color: white;
+        color: hsl(353, 100%, 62%);
+    }
+
+    .start {
+        background-color: white;
+        color: hsl(353, 100%, 62%);
+        font-weight: 400;
+    }
+
+    .designed{
+        /* border: 2px solid black; */
+        background-image: url(/images/illustration-editor-desktop.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 50%;
+        padding-right: -5rem;
+    }
+    .ddtext{
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid blue; */
+    }
+    .dimage1{
+        display: none;
+    }
+    /* .dimage{
+        display: block;
+        width: 50%;
+    } */
+    /* .dimage img{
+        height: 60rem;
+    } */
+    .dtext{
+        padding-left: 5rem;
+        width: 40%;
+        text-align: left;
+        /* border: 3px solid green; */
+    }
+   
+.designed h1{
+    margin-bottom: 7rem;
+}
+.dtext1 h2{
+    margin-left: 2rem;
+}
+.state{
+    display: flex;
+    height: 25rem;
+    background: linear-gradient(rgba(44, 45, 63, 0.7), rgba(63, 65, 100, 0.9)), url(/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 100%;
+}
+.simage{
+    width: 50%;
+    margin-top: -4.5rem;
+}
+.simage img{
+    height: 25rem;
+    width: 26rem;
+}
+.stext{
+    width: 50%;
+    text-align: left;
+    padding-right: 5rem;
+    padding-top: 5rem;
+}
+.stext p{
+    margin-left: -1.7rem;
+}
+
+.free{
+    display: flex;
+    height: 35rem;
+}
+
+.ftext{
+    width: 50%;
+    margin-left: 9rem;
+    padding-top: 7rem;
+}
+.fimage{
+    width: 50%;
+    background-image: url(/images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 100%;
+    margin-left: -10rem;
+}
+.fimage img{
+    display: none;
+}
+.ftext1{
+    text-align: left;
+}
+.ftext1 p{
+    margin-left: -2rem;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 17rem;
+}
+}
